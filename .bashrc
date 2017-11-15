@@ -114,9 +114,6 @@ if ! shopt -oq posix; then
 fi
 
 # ssh aliases
-alias pogogit='pogo@pogosim.particle.kth.se'
-alias ST1='pogo@sphinxstation1.particle.kth.se'
-alias ST2='pogo@sphinxstation2.particle.kth.se'
 
 # Geant4 environment variables
 #source /usr/share/geant4/geant4.10.02.p02-install/bin/geant4.sh
@@ -125,14 +122,10 @@ source /usr/share/geant4/geant4.10.03.p01-install/bin/geant4.sh
 # Gate path
 #export PATH=$PATH:/usr/share/gate/gate_v7.2-install/bin
 #export PATH=$PATH:/usr/share/gate/gate_v8.0-install/bin
-#export PATH=$PATH:/home/pogo/git/GateSarrut/GateSarrut-install/bin
 export PATH=$PATH:/home/pogo/git/Gate-install/bin
 
 # Cadmesh path
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$(echo /usr/share/cadmesh/CADMesh*-install/lib)
-
-# Other paths
-export CRCT=/media/sf_Google_Drive/CRCT
 
 # Logbook alias with automatic date filename
 #alias log='echo $(date +%Y-%m-%d): >> $CRCT/logbook/$(date +%Y-%m).log; nano +10000 $CRCT/logbook/$(date +%Y-%m).log'
@@ -141,5 +134,3 @@ alias log='echo $(date +%Y-%m-%d): >> $CRCT/logbook/$(date +%Y-%m).log; vi +1000
 # vi aliases
 alias rvi='sudo -E vi'
 
-# other aliases
-alias paravos='paraview'
